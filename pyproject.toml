@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry_sample"
+version = "0.1.0"
+description = "sample"
+authors = ["lemniscate snickets <git@uaftab.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "poetry_sample"}]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+hello = "poetry_sample.hello:hello_function"
+
