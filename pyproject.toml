@@ -7,6 +7,9 @@ license = "MIT"
 readme = "README.md"
 packages = [{include = "poetry_sample"}]
 
+[settings.virtualenvs]
+in-project = true
+
 [tool.poetry.dependencies]
 python = "^3.6"
 
