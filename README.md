@@ -14,3 +14,9 @@
 
     #To add a package
     poetry add <package name>
+
+    # To run tests
+    poetry run coverage run -m pytest
+
+    # To get the test report
+    poetry run coverage report -m

@@ -7,17 +7,17 @@ license = "MIT"
 readme = "README.md"
 packages = [{include = "poetry_sample"}]
 
-[settings.virtualenvs]
-in-project = true
+# [settings.virtualenvs]
+# in-project = true
 
 [tool.poetry.dependencies]
 python = "^3.9, <3.12"
-
+coverage = "^7.3.0"
+pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
 
 [tool.poetry.scripts]
 hello = "poetry_sample.hello:hello_function"
