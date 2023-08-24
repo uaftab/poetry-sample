@@ -16,6 +16,7 @@
     poetry add <package name>
 
     # To run tests
+    poetry run pytest --cov=.
     poetry run coverage run -m pytest
 
     # To get the test report
